@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC0CB"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtv_titulo"
+        android:layout_width="213dp"
+        android:layout_height="89dp"
+        android:fontFamily="cursive"
+        android:foregroundTint="#C80A0A"
+        android:gravity="center"
+        android:text="PoupaFacil"
+        android:textColor="#0C9C02"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="368dp"
+        android:layout_height="457dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.817">
+
+        <TextView
+            android:id="@+id/txtv_valor_inicial"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Valor inicial:"
+            android:textAlignment="viewStart"
+            android:textColor="#002BFF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edt_valor_inicial"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Valor em R$. Ex: 1700.00"
+            android:inputType="text"
+            android:textColor="#06FFC6"
+            android:textColorHint="#66019E8B"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtv_aplicacao"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Aplicação Mensal"
+            android:textColor="#002BFF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edt_aplicacao"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Ex: 100.00"
+            android:inputType="text"
+            android:textColor="#06FFC6"
+            android:textColorHint="#66019E8B"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtv_tempo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Tempo da aplicação"
+            android:textColor="#002BFF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edt_tempo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Em meses"
+            android:inputType="text"
+            android:textColor="#06FFC6"
+            android:textColorHint="#66019E8B"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtv_taxa"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Taxa"
+            android:textColor="#002BFF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edt_taxa"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Ex: 0.02"
+            android:inputType="text"
+            android:textColor="#06FFC6"
+            android:textColorHint="#66019E8B"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_calcular"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:backgroundTint="#15D80E"
+            android:gravity="bottom|center"
+            android:text="Calcular"
+            android:textColor="#000000"
+            android:textSize="42sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgv_cofrinho"
+        android:layout_width="135dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/txtv_titulo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061"
+        app:srcCompat="@drawable/cofrinho" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
